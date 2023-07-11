@@ -1,19 +1,14 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
+import Header from "./components/Header";
+import Content from "./components/Content";
+import Footer from "./components/Footer";
 
 function App() {
-  const handleNameChange = () => {
-    const names = ["Bob", "Kevin", "Dave"];
-    const int = Math.floor(Math.random() * 3);
-
-    return names[int];
-  };
-
   return (
     <>
-      <p>Hello {handleNameChange()}!</p>
+      <Header />
+      <Content />
+      <Footer />
     </>
   );
 }
